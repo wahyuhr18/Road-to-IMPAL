@@ -1,0 +1,14 @@
+CREATE TABLE client (
+    clientId int NOT NULL AUTO_INCREMENT,
+    nama varchar(30),
+    noHP int(15),
+    email varchar(30),
+    PRIMARY KEY (clientId) 
+);
+
+INSERT INTO client (nama, noHP, email)
+VALUES ('Irwan', 081324165464, 'irwan@gmail.com');
+INSERT INTO client (nama, noHP, email)
+VALUES ('Rifqi', 081324567833, 'rifqi@gmail.com');     
+
+SELECT *FROM client WHERE nama = 'Irwan' ;   
