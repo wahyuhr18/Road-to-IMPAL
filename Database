@@ -12,3 +12,29 @@ INSERT INTO client (nama, noHP, email)
 VALUES ('Rifqi', 081324567833, 'rifqi@gmail.com');     
 
 SELECT *FROM client WHERE nama = 'Irwan' ;   
+
+
+CREATE TABLE pembeli (
+	pembeliID int NOT NULL AUTO_INCREMENT,
+    username varchar(20),
+    password varchar(20),
+    namaPembeli varchar(30),
+    alamatPembeli varchar(30),
+    noHP int(15),
+    email varchar(30),
+    PRIMARY KEY (pembeliID)
+);
+
+INSERT INTO pembeli (username, password, namaPembeli, alamatPembeli, noHP, email)
+VALUES ('wahyuhr', '123456789', 'Wahyu Hidayat Ramadhan', 'Sukabumi', 085720779455, 'wahyuhr18@gmail.com');
+
+INSERT INTO pembeli (username, password, namaPembeli, alamatPembeli, noHP, email)
+VALUES ('rifqifr', '987654321', 'Muhammad Rifqi Fauzi', 'Tasikmalaya', 087712566885, 'rifqifauzi99@gmail.com');
+
+INSERT INTO pembeli (username, password, namaPembeli, alamatPembeli, noHP, email)
+VALUES ('iftitahrh', '11223344', 'Iftitah Rayung Isya', 'Cianjur', 081225567894, 'dea.iftitah@gmail.com');
+
+INSERT INTO pembeli (username, password, namaPembeli, alamatPembeli, noHP, email)
+VALUES ('mirwanr', '99887766', 'Muhammad Irwan Iskandar', 'Cianjur', 081324165464, 'rifaiiskandar@gmail.com');
+
+SELECT * FROM `pembeli` WHERE alamatPembeli='Cianjur';
